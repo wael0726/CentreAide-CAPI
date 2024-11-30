@@ -1,0 +1,158 @@
+/* General Styling */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+  background: black;
+  color: black;
+}
+
+/* Global Styling for Split Screen */
+.profile-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100vh; /* Full height of the viewport */
+}
+
+.left-section {
+  flex: 1;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-section {
+  flex: 1;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Form Bubble */
+.profile-bubble {
+  background: black;
+  border-radius: 20px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+  margin-top: 100px;
+  padding: 70px;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* Title Styling */
+.profile-title {
+  font-size: 2rem;
+  color: white;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Profile Image */
+.profile-image-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.profile-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid white;
+}
+
+/* Form Styling */
+.profile-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+}
+
+.form-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+label {
+  font-size: 1.1rem;
+  font-weight: bold black;
+  color: white;
+}
+
+.form-input {
+  padding: 10px 15px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+.form-input:focus {
+  border: 1px solid #6a11cb;
+  outline: none;
+}
+
+.upload-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.upload-label {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: white;
+}
+
+.form-submit-button {
+  background: white;
+  color: black;
+  font-size: 1.2rem;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.form-submit-button:hover {
+  background: black;
+  color: white;
+}
+
+/* Error and Success Messages */
+.error-message {
+  color: red;
+}
+
+.success-message {
+  color: green;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .profile-container {
+    flex-direction: column;
+  }
+
+  .left-section,
+  .right-section {
+    flex: none;
+    width: 100%;
+    height: 50%; /* Take half the viewport height on smaller screens */
+  }
+
+  .profile-bubble {
+    width: 95%; /* Adjust width for smaller screens */
+  }
+}

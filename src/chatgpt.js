@@ -1,0 +1,1 @@
+export const key = "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";
